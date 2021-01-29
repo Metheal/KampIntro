@@ -8,5 +8,7 @@ namespace GameDemo.Abstract
     public interface IPlayerService
     {
         void Save(Player player);
+        void Delete(Player player);
+        void Update(Player player);
     }
 }

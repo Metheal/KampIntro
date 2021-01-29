@@ -39,6 +39,15 @@ namespace GameDemo.Concrete
             }
         }
 
+        public override void Delete(Player player)
+        {
+            base.Delete(player);
+        }
+
+        public override void Update(Player player)
+        {
+            base.Update(player);
+        }
 
     }
 }

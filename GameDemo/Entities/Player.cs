@@ -5,15 +5,16 @@ using System.Text;
 
 namespace GameDemo.Entities
 {
-    public abstract class Player : IEntity
+    public abstract class Player
     {
-        public abstract int ID { get; set; }
-        public abstract string FirstName { get; set; }
-        public abstract string LastName { get; set; }
-        public abstract DateTime DateOfBirth { get; set; }
-        public abstract string NationalityID { get; set; }
-        public abstract string Nationality { get; set; }
-        public abstract int Points { get; set; }
+        public virtual int ID { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual DateTime DateOfBirth { get; set; }
+        public virtual string NationalityID { get; set; }
+        public virtual string Nationality { get; set; }
+        public virtual int Points { get; set; }
+        public virtual double Wallet { get; set; }
     }
 
 }

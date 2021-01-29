@@ -14,5 +14,6 @@ namespace GameDemo.Entities
         public override string NationalityID { get; set; }
         public override string Nationality { get { return "Turkey"; } set { } }
         public override int Points { get; set; }
+        public override double Wallet { get; set; }
     }
 }
