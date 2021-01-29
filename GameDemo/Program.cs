@@ -32,14 +32,10 @@ namespace GameDemo
 
 
             CampaignManager campaignManager = new CampaignManager();
-            Game discount1 = campaignManager.ApplyDiscount(ref game1, player1);
-            campaignManager.Sell(ref discount1, ref player1);
-            Game discount2 = campaignManager.ApplyDiscount(ref game2, player2);
-            campaignManager.Sell(ref discount2, ref player2);
-            Game discount3 = campaignManager.ApplyDiscount(ref game3, player3);
-            campaignManager.Sell(ref discount3, ref player3);
-            Game discount4 = campaignManager.ApplyDiscount(ref game4, player4);
-            campaignManager.Sell(ref discount4, ref player4);
+            campaignManager.Sell(campaignManager.ApplyDiscount(game1, player1), player1);
+            campaignManager.Sell(campaignManager.ApplyDiscount(game2, player2), player2);
+            campaignManager.Sell(campaignManager.ApplyDiscount(game3, player3), player3);
+            campaignManager.Sell(campaignManager.ApplyDiscount(game4, player4), player4);
 
 
             //Console.WriteLine("Registered users: " + playerManager.players.Count);

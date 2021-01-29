@@ -7,7 +7,7 @@ namespace GameDemo
 {
     interface ICampaignService
     {
-        void Sell(ref Game game, ref Player player);
-        Game ApplyDiscount(ref Game game, Player player);
+        void Sell(Game game, Player player);
+        Game ApplyDiscount(Game game, Player player);
     }
 }

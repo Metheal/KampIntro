@@ -7,7 +7,7 @@ namespace GameDemo.Concrete
 {
     class CampaignManager : ICampaignService
     {
-        public Game ApplyDiscount(ref Game game, Player player)
+        public Game ApplyDiscount(Game game, Player player)
         {
             int discountRatio;
             if (player.Points == 0)
@@ -36,7 +36,7 @@ namespace GameDemo.Concrete
             return game;
         }
 
-        public void Sell(ref Game game, ref Player player)
+        public void Sell(Game game, Player player)
         {
             if (game.Quantity>1)
             {
